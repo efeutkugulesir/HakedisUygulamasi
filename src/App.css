@@ -1,0 +1,44 @@
+.App {
+  text-align: left;
+  padding: 20px; /* Üstten biraz boşluk bırakmak için padding ekleyin */
+}
+
+.App-header {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* İçeriği sol hizalamak için flex-start kullanın */
+  justify-content: flex-start; /* Üstten hizalamak için flex-start kullanın */
+  font-size: calc(1px + 2vmin);
+  color: rgb(6, 6, 6);
+  padding-top: 175px; /* Üstten biraz daha boşluk bırakmak için padding-top ekleyin */
+}
+
+.logo-header {
+  background-color: #61dafb; /* Farklı arka plan rengi */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.logo-header img {
+  height: 50px; /* Logonun boyutunu ayarlayın */
+  margin-right: 20px;
+}
+
+.logo-header h1 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #282c34;
+}
+
+select {
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+

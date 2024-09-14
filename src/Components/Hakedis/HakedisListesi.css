@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #b22222; /* Dark Red */
+    text-align: center;
+}
+
+.button-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.menu-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #b22222; /* Dark Red */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.menu-button:hover {
+    background-color: #800000; /* Darker Red */
+}
+
+.yeni-hakedis-button {
+    background-color: #b22222; /* Dark Red */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    position: fixed;
+    top: 65px; /* Menü butonunun konumuna göre ayarlayın */
+    left: 0px; /* Menü butonunun konumuna göre ayarlayın */
+}
+
+.yeni-hakedis-button:hover {
+    background-color: #800000; /* Darker Red */
+}
+
+.hakediş-listesi-tablosu {
+    width: 97.5%;
+    margin: 70px auto 0; /* Tablonun menü ve butonlardan sonra başlamasını sağlamak için üst marjin ekleyin */
+    border-collapse: collapse;
+}
+
+.hakediş-listesi-tablosu th, .hakediş-listesi-tablosu td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.hakediş-listesi-tablosu th {
+    background-color: #b22222; /* Dark Red */
+    color: white;
+    text-align: left;
+}
+
+.hakediş-listesi-tablosu tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.hakediş-listesi-tablosu tr:hover {
+    background-color: #ddd;
+}
+
+.düzenle-button, .sil-button {
+    background-color: #b22222; /* Dark Red */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin: 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.düzenle-button:hover, .sil-button:hover {
+    background-color: #800000; /* Darker Red */
+}
+
+/* Modal Stili */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.modal-content button {
+    background-color: #b22222; /* Dark Red */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.modal-content button:hover {
+    background-color: #800000; /* Darker Red */
+}

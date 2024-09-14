@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #b22222; /* Koyu Kırmızı */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.rol-tablosu-container {
+    width: 97.5%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.rol-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.rol-table th, .rol-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.rol-table th {
+    background-color: #b22222; /* Koyu Kırmızı */
+    color: white;
+}
+
+.rol-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.rol-table tr:hover {
+    background-color: #ddd;
+}

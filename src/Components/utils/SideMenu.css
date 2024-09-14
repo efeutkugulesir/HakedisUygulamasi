@@ -1,0 +1,126 @@
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Yatay kaydırmayı önlemek için */
+}
+
+h2 {
+    color: #b22222; /* Dark Red */
+    text-align: center;
+}
+
+.menu-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #b22222; /* Dark Red */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    z-index: 1000; /* Menu butonunun diğer içeriklerin üstünde görünmesi için */
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Menü kapalıyken görünmemesi için */
+    width: 250px;
+    height: 100%;
+    background-color: #f5f5f5;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+    transition: left 0.3s ease;
+    z-index: 999; /* Menü butonunun hemen altında */
+    padding-top: 60px; /* Menü öğelerini aşağı kaydırmak için padding ekleyin */
+}
+
+.side-menu.open {
+    left: 0; /* Menü açıldığında görünür hale gelir */
+}
+
+.side-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.side-menu ul li {
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.side-menu ul li a, .side-menu ul li button {
+    text-decoration: none;
+    color: #333;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.side-menu ul li a:hover, .side-menu ul li button:hover {
+    background-color: #ddd;
+}
+
+.side-menu ul li.logout {
+    padding-top: 50px; /* Çıkış Yap butonunu alt kısma hizalamak için padding ekleyin */
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.modal-content button {
+    background-color: #b22222; /* Dark Red */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.modal-content button:hover {
+    background-color: #800000; /* Darker Red */
+}
+
+.side-menu ul li a i, .side-menu ul li button i {
+    margin-right: 10px;
+    width: 20px; /* İkon genişliği */
+    text-align: center; /* İkonları ortala */
+}
+
+.side-menu .user-info {
+    margin-top: 40px; /* Menü butonuna göre aşağıya hizalamak için üst boşluk ekledik */
+    padding: 15px 20px;
+    background-color: #b22222; /* Dark Red */
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
